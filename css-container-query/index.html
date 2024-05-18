@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .post {
+      container-type: inline-size;
+      container-name: sidebar;
+    }
+    .card h2 {
+      font-size: 1em;
+      color: blue;
+    }
+
+    @container sidebar (min-width: 700px) {
+      .card h2 {
+        font-size: max(1.5em, 1.23em + 2cqi);
+        color: red;
+      }
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="post">
+    <div class="card">
+      <h2>カードのタイトル</h2>
+      <p>カードのコンテンツ</p>
+    </div>
+  </div>
+</body>
+</html>
